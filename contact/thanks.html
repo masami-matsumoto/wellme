@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no">	
+<title>お問い合わせありがとうございます</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:700i" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="../css/bootstrap-4.0.0.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+</head>
+<body>
+<header id="header">
+  <div id="headerWrap">
+    <h1><img src="../images/logo.png" width="142" height="84" alt="logo"></h1>
+    <nav id="mainnav">
+      <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+      <div class="panel">
+        <ul>
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../products.html">PRODUCTS</a></li>
+          <li><a href="../OEM.html">OEM</a></li>
+          <li><a href="../recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="http://store.lifeperformance.jp/category/item/itemgenre/%e3%82%b7%e3%83%a3%e3%83%b3%e3%83%97%e3%83%bc/" target="_blank"><img src="../images/cart.png" alt="オンラインショップへ" width="28"/></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="sec01">
+  <div class="comTopBox">
+    <div class="hBox">
+      <h2 class="title thanks_title"><span>Thank you so much!</span>お問い合わせありがとうございました。</h2>
+    </div>
+  </div>
+  <div id="thanks">
+    <p class="text-center">お問い合わせありがとうございます。<br>
+      追って担当よりご連絡申し上げます。</p>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <h4>株式会社ウエルミー</h4>
+      <p> 〒184-0015 東京都小金井市貫井北町3-20-10<br>
+        TEL:042-381-0915<br>
+        FAX:042-386-0057<br>
+        HP:wellme.co.jp<br>
+        MAIL:info@wellme.co.jp </p>
+      <a href="http://store.lifeperformance.jp/category/item/itemgenre/%e3%82%b7%e3%83%a3%e3%83%b3%e3%83%97%e3%83%bc/" target="_blank"><img src="../images/cart.png" alt="オンラインショップへ"/><span>ONLINE SHOP</span></a> </div>
+  </div>
+  <p class="text-center"><span class="copyright-mark">&copy; 2019wellme</span></p>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+<script src="js/mailform-js.php"></script> 
+
+<!-- フリガナ自動入力ライブラリここから --> 
+<script src="js/jquery.autoKana.js"></script> 
+<script>
+	(function( $ ) {
+    $.fn.autoKana( '#name_1', '#read_1', {
+      katakana: false
+    });
+    $.fn.autoKana( '#name_2', '#read_2', {
+      katakana: false
+    });
+	})( jQuery );
+</script> 
+<!-- フリガナ自動入力ライブラリここまで --> 
+
+<!-- 住所自動入力ライブラリここから --> 
+<script src="js/ajaxzip3.js"></script> 
+<!-- 住所自動入力ライブラリここまで --> 
+
+<!-- ご希望の日時選択ライブラリここから --> 
+<script src="js/jquery.datetimepicker.js"></script> 
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script> 
+<!-- ご希望の日時選択ライブラリここまで --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../js/popper.min.js"></script> 
+<script src="../js/bootstrap-4.0.0.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
+<script src="../js/script.js"></script>
+</body>
+</html>

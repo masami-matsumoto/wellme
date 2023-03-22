@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no">	
+<title>お問い合わせページ</title>
+<meta name="Keywords" content="ウエルミー,ウェルミー,オーガニック,フミン酸,フルボ酸,オーガニックシャンプー,オーガニックトリートメント,ノンシリコン,ポアソ,ポアソシスパーム,海藻シャンプー,ゼロシャンプー,zero,コールド,ゼロミント,クレイパック,シャイニング,ピュアシャンプー,ロンアップ">
+<meta name="Description" content=" 弊社は美容業界向けパーマ・シャンプー・スタイリング剤等の製造・販売を行っております。また、美容・理容サロン様へ美容材料・器具等の販売も行っております。シャンプー・パーマ液等のOEMも承っております。小ロットでの製造も可能です。ご相談をお待ちしています。">
+<!-- Favicons Generated with favicon.il.ly -->
+<link rel="icon" sizes="16x16 32x32 48x48 64x64" href="favicon/favicon.ico"/>
+<!--[if IE]>
+<link rel="shortcut icon" href="favicon.ico"/>
+<![endif]--> 
+<!-- Optional: Android & iPhone-->
+<link rel="apple-touch-icon-precomposed" href="favicon/favicon-152.png"/>
+<!-- Optional: IE10 Tile.-->
+<meta name="msapplication-TileColor" content="#FFFFFF"/>
+<meta name="msapplication-TileImage" content="favicon/favicon-144.png"/>
+<!-- Optional: ipads, androids, iphones, ...-->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/favicon-152.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/favicon-144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/favicon-120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/favicon-114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/favicon-72.png"/>
+<link rel="apple-touch-icon-precomposed" href="favicon/favicon-57.png"/>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:700i" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="../css/bootstrap-4.0.0.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+</head>
+<body>
+<header id="header">
+  <div id="headerWrap">
+    <h1><img src="../images/logo.png" width="142" height="84" alt="logo"></h1>
+    <nav id="mainnav">
+      <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+      <div class="panel">
+        <ul>
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../products.html">PRODUCTS</a></li>
+          <li><a href="../OEM.html">OEM</a></li>
+          <li><a href="../recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="http://store.lifeperformance.jp/category/item/itemgenre/%e3%82%b7%e3%83%a3%e3%83%b3%e3%83%97%e3%83%bc/" target="_blank"><img src="../images/cart.png" alt="オンラインショップへ" width="28"/></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="sec01">
+  <div class="comTopBox">
+    <div class="hBox">
+      <h2 class="title"><span>contact</span>お問い合わせ</h2>
+    </div>
+  </div>
+  <form action="php/mailform.php" method="post" id="mail_form">
+    <dl>
+      <dt>会社名／店名</dt>
+      <dd>
+        <input type="text" id="company" name="company" value="" />
+      </dd>
+      <dt>お名前</dt>
+      <dd class="required">
+        <input type="text" id="name_1" name="name_1" value="" />
+        <input type="text" id="name_2" name="name_2" value="" />
+      </dd>
+      <dt>ふりがな</dt>
+      <dd class="required">
+        <input type="text" id="read_1" name="read_1" value="" />
+        <input type="text" id="read_2" name="read_2" value="" />
+      </dd>
+      <dt>メールアドレス</dt>
+      <dd class="required">
+        <input type="email" id="mail_address" name="mail_address" value="" />
+      </dd>
+      <dt>メールアドレス<br />
+        (確認用)</dt>
+      <dd class="required">
+        <input type="email" id="mail_address_confirm" name="mail_address_confirm" value="" />
+      </dd>
+      <dt>郵便番号</dt>
+      <dd class="required">
+        <input type="text" id="postal" name="postal" value="" onkeyup="AjaxZip3.zip2addr(this,'','address','address');" />
+        <a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+      <dt>住所</dt>
+      <dd class="required">
+        <input type="text" id="address" name="address" value="" />
+      </dd>
+      <dt>電話番号</dt>
+      <dd class="required">
+        <input type="tel" id="phone" name="phone" value="" />
+      </dd>
+      <dt>お問い合わせの種類</dt>
+      <dd class="required">
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" class="kind" name="kind[]" value="商品について" />
+              商品について</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="kind" name="kind[]" value="キャンペーンについて" />
+              OEMについて</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="kind" name="kind[]" value="採用について" />
+              採用について</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="kind" name="kind[]" value="ご意見・ご要望" />
+              ご意見・ご要望</label>
+          </li>
+        </ul>
+      </dd>
+      <dt>返信方法のご希望</dt>
+      <dd class="required">
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" class="response" name="response[]" value="電話での返信を希望" />
+              電話での返信を希望</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="response" name="response[]" value="メールでの返信を希望" />
+              メールでの返信を希望</label>
+          </li>
+        </ul>
+      </dd>
+      <dt>お問い合わせの内容</dt>
+      <dd class="required">
+        <textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea>
+      </dd>
+    </dl>
+    <p id="form_submit">
+      <input type="button" id="form_submit_button" value="送信する" />
+    </p>
+  </form>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <h4>株式会社ウエルミー</h4>
+      <p> 〒184-0015 東京都小金井市貫井北町3-20-10<br>
+        TEL:042-381-0915<br>
+        FAX:042-386-0057<br>
+        HP:wellme.co.jp<br>
+        MAIL:info@wellme.co.jp </p>
+      <a href="http://store.lifeperformance.jp/category/item/itemgenre/%e3%82%b7%e3%83%a3%e3%83%b3%e3%83%97%e3%83%bc/" target="_blank"><img src="../images/cart.png" alt="オンラインショップへ"/><span>ONLINE SHOP</span></a> </div>
+  </div>
+  <p class="text-center"><span class="copyright-mark">&copy; 2019wellme</span></p>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+<script src="js/mailform-js.php"></script> 
+
+<!-- フリガナ自動入力ライブラリここから --> 
+<script src="js/jquery.autoKana.js"></script> 
+<script>
+	(function( $ ) {
+    $.fn.autoKana( '#name_1', '#read_1', {
+      katakana: false
+    });
+    $.fn.autoKana( '#name_2', '#read_2', {
+      katakana: false
+    });
+	})( jQuery );
+</script> 
+<!-- フリガナ自動入力ライブラリここまで --> 
+
+<!-- 住所自動入力ライブラリここから --> 
+<script src="js/ajaxzip3.js"></script> 
+<!-- 住所自動入力ライブラリここまで --> 
+
+<!-- ご希望の日時選択ライブラリここから --> 
+<script src="js/jquery.datetimepicker.js"></script> 
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script> 
+<!-- ご希望の日時選択ライブラリここまで --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../js/popper.min.js"></script> 
+<script src="../js/bootstrap-4.0.0.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
+<script src="../js/script.js"></script>
+</body>
+</html>
